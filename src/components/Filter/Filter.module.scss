@@ -1,0 +1,36 @@
+.filter {
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.filter__buttons {
+	display: flex;
+	align-items: center;
+	border: 1.5px solid #000;
+}
+
+.button__item {
+	padding: 8px 16px;
+	border-right: 1px solid #000;
+	cursor: pointer;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+}
+
+.button__item:last-child {
+	border-right: 0;
+}
+
+.button__item:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.button__item.active {
+	background: #afafaf;
+}

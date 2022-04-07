@@ -1,0 +1,25 @@
+.card__list {
+	display: grid;
+	grid-auto-columns: auto;
+	gap: 10px;
+}
+
+@media (min-width: 420px) {
+	.card__list {
+		grid-template-columns: repeat(auto-fit, 305px);
+		justify-content: center;
+		gap: 32px;
+	}
+}
+
+@media (min-width: 680px) {
+	.card__list {
+		grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+	}
+}
+
+@media (min-width: 1440px) {
+	.card__list {
+		grid-template-columns: repeat(4, 305px);
+	}
+}
